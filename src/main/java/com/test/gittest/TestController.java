@@ -10,8 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/test")
 public class TestController {
 
-    @GetMapping
+    @GetMapping("/A")
     public ResponseEntity<String> featureA(){
         return new ResponseEntity<>("Feature A", HttpStatus.OK);
+    }
+
+    @GetMapping("/B")
+    public ResponseEntity<String> featureB(){
+        return new ResponseEntity<>("Feature B", HttpStatus.OK);
     }
 }
