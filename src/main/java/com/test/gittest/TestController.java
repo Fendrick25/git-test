@@ -19,4 +19,9 @@ public class TestController {
     public ResponseEntity<String> featureB(){
         return new ResponseEntity<>("Feature B", HttpStatus.OK);
     }
+
+    @GetMapping("/C")
+    public ResponseEntity<String> featureC(){
+        return new ResponseEntity<>("Feature C", HttpStatus.OK);
+    }
 }
